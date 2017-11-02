@@ -1,0 +1,32 @@
+body {
+	font-family: Helvetica;
+}
+#header {
+	background: black;
+	height: 200px;
+}
+#header-text {
+	padding-top: 60px;
+	font-size: 100px;
+	color: #c4401f;
+	line-height: 20%;
+
+}
+#header-by {
+	font-size: 10px;
+	color: #c4401f;
+	font-weight: bold;
+}
+html, #main-area{
+	background: #cebda5;
+	height: 100%;
+}
+#russell-img {
+	margin-top: 30px;
+	width: 200px;
+	height: auto;
+}
+.story-text {
+	margin-left: 20px;
+	font-size: 20px;
+}
