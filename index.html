@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<title>El Pollo Blanco</title>
+		<link rel="shortcut icon" href="favicon.png">
 		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
@@ -13,8 +14,16 @@
 			<p class="story-text"> 
 Our story starts with a very old artifact, found deep within Tony's old documents.  We did a little research and discovered this young child went with the alias of Russell Chien.  He was a very white child from birth to his end.  His story truly touched us, and revealed to us his deep emotions hiding under that ivory skin of his. Now it’s our turn, to shed some light on his dark secret. This is all how the story begins...
 			</p>
+			<center><div class="chapterSel">
+  				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
+ 				<div id="chapters" class="chapters-content">
+    				<a href="chapterOne.html">Chapter 1</a>
+    				<a href="chapterTwo.html">Chapter 2</a>
+    				<a href="chapterThree.html">Chapter 3</a>
+  				</div>
+  			</div></center>
 			<br><br>
-			<p class="story-text">
+<!-- 			<p class="story-text">
 A white chick...
 A young white chick entering the world full of curiosity only to grow up and feed the slaughterhouse.
 His inquiring looks shows so much interest for the world but now he has a heart of ice swearing his soul out and spending his days drowning is melancholy classical music.  
@@ -79,8 +88,26 @@ Cyclone Flap(Air bender hadouken)
 ​
 Finishing his notes, he spreads the blanket out and lays upon it.  Squinting his eyes before shutting them, the peaceful night breeze brushes across his feathers.  This was probably the best sleep he has gotten in days and probably the last.
 			</p>
-		</div>
+		</div> -->
+		<br><br>
 		<script>
+			function chaptersShow() {
+				document.getElementById("chapters").style.display = "block";
+			}
+
+			window.onclick = function(event) {
+  				if (!event.target.matches('#chaptersbtn')) {
+
+   					var chapters = document.getElementsByClassName("chapters-content");
+    				var i;
+    				for (i = 0; i < chapters.length; i++) {
+      					var openChapter = chapters[i];
+      					if (openChapter.style.display === "block") {
+        					openChapter.style.display = "none";
+      					}
+    				}
+  				}
+			}
 		</script>
 	</body>
 </html>

@@ -1,9 +1,49 @@
 body {
 	font-family: Helvetica;
 }
-#header {
+html, #header {
 	background: black;
 	height: 200px;
+	width: 100%;
+}
+#chaptersbtn {
+	background-color: #e8ce09;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+#chaptersbtn:hover, #chaptersbtn:focus {
+	background-color: #c4ae07;
+}
+.chapterSel {
+	padding: 20px;
+	position: relative;
+	display: inline-block;
+}
+.chapters-content {
+	display: none;
+	position: absolute;
+	left: -10px;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.chapters-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+.chapters-content a:hover {
+	background-color: #f1f1f1;
+}
+.chapter-text {
+	color: black;
+	padding: 10px 10px;
+	font-size: 30px;
 }
 #header-text {
 	padding-top: 60px;
@@ -13,7 +53,7 @@ body {
 
 }
 #header-by {
-	font-size: 10px;
+	font-size: 19px;
 	color: #c4401f;
 	font-weight: bold;
 }
@@ -22,9 +62,10 @@ html, #main-area{
 	height: 100%;
 }
 #russell-img {
-	margin-top: 30px;
+	margin: 30px 30px 15px 30px;
 	width: 200px;
 	height: auto;
+	display: show;
 }
 .story-text {
 	margin-left: 20px;

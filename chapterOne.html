@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>El Pollo Blanco</title>
+		<link rel="shortcut icon" href="favicon.png">
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div id="header">
+			<center><h1 id="header-text">El Pollo Blanco</h1></center>
+			<center><p id="header-by">By Tony Xin and Tai Nguyen</p><center>
+		</div>
+		<div id="main-area">
+			<center><h2 class="chapter-text">Chapter One</h2></center>
+			<p class="story-text">
+A white chick...
+A young white chick entering the world full of curiosity only to grow up and feed the slaughterhouse.
+His inquiring looks shows so much interest for the world but now he has a heart of ice swearing his soul out and spending his days drowning is melancholy classical music. 
+			</p> 
+			<center><div class="chapterSel">
+  				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
+ 				<div id="chapters" class="chapters-content">
+    				<a href="chapterOne.html">Chapter 1</a>
+    				<a href="chapterTwo.html">Chapter 2</a>
+    				<a href="chapterThree.html">Chapter 3</a>
+  				</div>
+  			</div></center>
+			<br><br>
+		</div>
+		<br><br>
+		<script>
+			function chaptersShow() {
+				document.getElementById("chapters").style.display = "block";
+			}
+
+			window.onclick = function(event) {
+  				if (!event.target.matches('#chaptersbtn')) {
+
+   					var chapters = document.getElementsByClassName("chapters-content");
+    				var i;
+    				for (i = 0; i < chapters.length; i++) {
+      					var openChapter = chapters[i];
+      					if (openChapter.style.display === "block") {
+        					openChapter.style.display = "none";
+      					}
+    				}
+  				}
+			}
+		</script>
+	</body>
+</html>
