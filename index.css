@@ -71,3 +71,13 @@ html, #main-area{
 	margin-left: 20px;
 	font-size: 20px;
 }
+.big-space {
+	height: 500px;
+}
+.small-space {
+	height: 10px;
+}
+#end-text {
+	font-size: 10px;
+	text-align: center;
+}

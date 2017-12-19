@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>El Pollo Blanco</title>
+		<link rel="shortcut icon" href="favicon.png">
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div id="header">
+			<center><h1 id="header-text">El Pollo Blanco</h1></center>
+			<center><p id="header-by">By Tony Xin and Tai Nguyen</p><center>
+		</div>
+		<div id="main-area">
+			<center><h2 class="chapter-text">Chapter One</h2></center>
+			<p class="story-text">
+His mom, a Shanghainese travel agent. His dad, a well-trained vet. No blood containing this power was flowing inside his veins. Then how could this be? How could he have transformed from a white chick, to a… to a… to a rooster with these powers with no sign of this transformation? Was this not only from his parent, but further down his pedigree? No, it can’t. He knew his family lineage like the back of his hand. Lee kong, Song tong, yang xin, yes. It can’t be from his family, nobody was ever special. Then where, where had this sudden burst of power come from. He had come from hell and back, experienced love that was not true. Not authentic. Not genuine. Was it this feeling of being betrayed, of being taken away of everything, that caused God to give him a gift. Were these powers God’s gift. He had a fast mind, had cognitive abilities, but everywhere he looked for reason, there was none. This was a God’s gift to reimburse him for the troubles he’s had. It was the only answer.
+ 
+This young chick has yet again been saved from the depths of hell, maybe saved forever. Now, nothing that had tormented him before could hurt him again. Not Geal. Not his past. Not even death. Now, he was searching again. Searching for another answer. What could make him feel pain? His result: Nothing. Nothing could touch him ever again. A certain feeling of power rose within. This new confidence was something that he hasn’t felt in the entirety of his life. It was like an enlightenment that drove all the worries out of his mind.
+ 
+He then all of a sudden came back to reality. He was sitting on a bench, on the side of the road. A singular lamp lighting the way. It was raining. He hadn’t noticed this, since he was deep in thought. Had he really experienced that. Did he actually have powers that the people only dreamed of. Then, all of a sudden he remembered what had snapped him back from his pondering. A noise. A faint, eerie sound coming from an ominous alleyway 2 blocks away. Did he still have those powers? Does he still have this confidence to investigate?
+			</p>
+			<center><div class="chapterSel">
+  				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
+ 				<div id="chapters" class="chapters-content">
+    				<a href="chapterOne.html">Chapter 1</a>
+    				<a href="chapterTwo.html">Chapter 2</a>
+    				<a href="chapterThree.html">Chapter 3</a>
+    				<a href="chapterFour.html">Chapter4</a>
+    				<a href="chapterFive.html">Chapter 5</a>
+    				<a href="chapterSix.html">Chapter 6</a>
+  				</div>
+  			</div></center>
+			<br><br>
+		</div>
+		<div class="big-space">
+		</div>
+		<p id="end-text">If you have any suggestions, send them to <a href="yytonyxin@gmail.com">yytonyxin@gmail.com</a></p>
+		<div class="small-space">
+		</div>
+		<script>
+			function chaptersShow() {
+				document.getElementById("chapters").style.display = "block";
+			}
+
+			window.onclick = function(event) {
+  				if (!event.target.matches('#chaptersbtn')) {
+
+   					var chapters = document.getElementsByClassName("chapters-content");
+    				var i;
+    				for (i = 0; i < chapters.length; i++) {
+      					var openChapter = chapters[i];
+      					if (openChapter.style.display === "block") {
+        					openChapter.style.display = "none";
+      					}
+    				}
+  				}
+			}
+		</script>
+	</body>
+</html>
