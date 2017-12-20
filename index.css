@@ -75,7 +75,7 @@ html, #main-area{
 	height: 500px;
 }
 .small-space {
-	height: 10px;
+	height: 0.1;
 }
 #end-text {
 	font-size: 10px;
