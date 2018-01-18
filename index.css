@@ -50,7 +50,6 @@ html, #header {
 	font-size: 100px;
 	color: #c4401f;
 	line-height: 20%;
-
 }
 #header-by {
 	font-size: 19px;
@@ -75,11 +74,7 @@ html, #main-area{
 	height: 500px;
 }
 .small-space {
-<<<<<<< HEAD
-	height: 0.1;
-=======
 	height: 0.1px;
->>>>>>> 59b1639fd1d49f8643e2b93c47ff9c4bb4912691
 }
 #end-text {
 	font-size: 10px;
