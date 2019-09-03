@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<title>El Pollo Blanco</title>
-		<link rel="shortcut icon" href="favicon.png">
-		<link rel="stylesheet" href="index.css">
+		<link rel="shortcut icon" href="../favicon.png">
+		<link rel="stylesheet" href="../index.css">
 	</head>
 	<body>
 		<div id="header">
@@ -21,10 +21,14 @@ ETc.?
 He crumpled up the paper and shoved it down his formal pants.  He trudged down to the alleyway in a heavy downpour, only to find a body.  It was half disassembled, blood mixed with rainwater gurgling down to the sewers.  This person’s fingers were gone and so was his lower half of the body.  It looked like a he to Russell, but he wasn’t sure.  In his chest, a whole had been ripped out, the exact spot where the heart should be.  He remembered in his Kuku Scream, seeing three men towering over the man.  Russell thought it was some mugging business, or a drug deal gone bad, but he never imagined it to become this violent.  He slowly knelt over the body and saw a silver necklace in a shape of a bird, no a turkey to be specific.  He wrapped his hands around it, and yanked.  He took the necklace and placed it in his pocket.  He furthered his examination to find a note tucked in the shirt pocket.  It read 21 right 3 left 3 right.  What could this possibly mean?  He shrugged it off and tucked it away in his pockets.  Now he was shivering cold in the dark with a dead person whose gender he assumed was of male origin.  He was grossed out to see the assumption to just leave the man to rot out here, so he picked the man up and tossed him in the dumpster.  “At least he has shelter and a meh burial place”, he thought to himself.  Soaked in water and blood, he turns around to head home, but then something hit him very hard.  Blackness consumed him.  Wait were those wolves?  No they had hands… Werewolves?  Wolf-man tribe?  
 Unconsciousness swept over, and the last thought in his mind was: As a living chicken boy, I’ve been kidnapped by a tribe of Wolf-man….
 			</p>
-			<center><div class="chapterSel">
+			<center>
+  				<button onclick="prev()" id="prevbtn">Previous</button>
+  				<button onclick="next()" id="nextbtn">Next</button>
+  				<br>
+				<div class="chapterSel">
   				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
  				<div id="chapters" class="chapters-content">
- 					<a href="index.html">Prologue</a>
+ 					<a href="../index.html">Prologue</a>
     				<a href="chapterOne.html">Chapter 1</a>
     				<a href="chapterTwo.html">Chapter 2</a>
     				<a href="chapterThree.html">Chapter 3</a>
@@ -48,6 +52,14 @@ Unconsciousness swept over, and the last thought in his mind was: As a living ch
 				document.getElementById("chapters").style.display = "block";
 			}
 
+			function next() {
+				location.href = "chapterNine.html";
+			}
+
+			function prev() {
+				location.href = "chapterSeven.html";
+			}
+
 			window.onclick = function(event) {
   				if (!event.target.matches('#chaptersbtn')) {
 
@@ -61,6 +73,7 @@ Unconsciousness swept over, and the last thought in his mind was: As a living ch
     				}
   				}
 			}
+
 		</script>
 	</body>
 </html>

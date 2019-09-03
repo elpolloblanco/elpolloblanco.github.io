@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<title>El Pollo Blanco</title>
-		<link rel="shortcut icon" href="favicon.png">
-		<link rel="stylesheet" href="index.css">
+		<link rel="shortcut icon" href="../favicon.png">
+		<link rel="stylesheet" href="../index.css">
 	</head>
 	<body>
 		<div id="header">
@@ -18,10 +18,14 @@ This young chick has yet again been saved from the depths of hell, maybe saved f
  
 He then all of a sudden came back to reality. He was sitting on a bench, on the side of the road. A singular lamp lighting the way. It was raining. He hadn’t noticed this, since he was deep in thought. Had he really experienced that. Did he actually have powers that the people only dreamed of. Then, all of a sudden he remembered what had snapped him back from his pondering. A noise. A faint, eerie sound coming from an ominous alleyway 2 blocks away. Did he still have those powers? Does he still have this confidence to investigate?
 			</p>
-			<center><div class="chapterSel">
+			<center>
+  				<button onclick="prev()" id="prevbtn">Previous</button>
+  				<button onclick="next()" id="nextbtn">Next</button>
+  				<br>
+				<div class="chapterSel">
   				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
  				<div id="chapters" class="chapters-content">
- 					<a href="index.html">Prologue</a>
+ 					<a href="../index.html">Prologue</a>
     				<a href="chapterOne.html">Chapter 1</a>
     				<a href="chapterTwo.html">Chapter 2</a>
     				<a href="chapterThree.html">Chapter 3</a>
@@ -45,6 +49,14 @@ He then all of a sudden came back to reality. He was sitting on a bench, on the 
 				document.getElementById("chapters").style.display = "block";
 			}
 
+			function next() {
+				location.href = "chapterNine.html";
+			}
+
+			function prev() {
+				location.href = "chapterSeven.html";
+			}
+
 			window.onclick = function(event) {
   				if (!event.target.matches('#chaptersbtn')) {
 
@@ -58,6 +70,7 @@ He then all of a sudden came back to reality. He was sitting on a bench, on the 
     				}
   				}
 			}
+
 		</script>
 	</body>
 </html>

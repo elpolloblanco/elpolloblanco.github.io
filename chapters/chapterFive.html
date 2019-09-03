@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<title>El Pollo Blanco</title>
-		<link rel="shortcut icon" href="favicon.png">
-		<link rel="stylesheet" href="index.css">
+		<link rel="shortcut icon" href="../favicon.png">
+		<link rel="stylesheet" href="../index.css">
 	</head>
 	<body>
 		<div id="header">
@@ -16,10 +16,14 @@ How very intriguing.  The world seemed so much brighter, was it that burning sin
  
 This night was the night of prom, and all the school was attending.  He gathers up courage for a last minute effort to ask out Geal.  His efforts were worthy for she said yes.  He was so happy he smiled.  This was the first time he smiled in years.  He suited up and looked ready to take out his love for prom, but as he rounded the school corner, he could clearly see her mouth was intimately wrapped within another man’s mouth.  Tears rolled down his eyes and soon rage burned through heart.  All common sense was seared, and he stormed off into the night.  He stomped down the street blindly, only to open his eyes and see he was soaring above tree tops.  What is this monstrosity he thought.  He squinted his eyes to look closely and a bright beam of light blinded him.  He opened his eyes only to find the world has stopped.  No sound, no birds, no cars.  Had he stopped time by squinting?  He squinted once again only to find noise arousing all around him.  Super Jump, Time Freeze, what else could he possibly have? But he wondered, where did he get these powers?
 			</p>
-			<center><div class="chapterSel">
+			<center>
+  				<button onclick="prev()" id="prevbtn">Previous</button>
+  				<button onclick="next()" id="nextbtn">Next</button>
+  				<br>
+				<div class="chapterSel">
   				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
  				<div id="chapters" class="chapters-content">
- 					<a href="index.html">Prologue</a>
+ 					<a href="../index.html">Prologue</a>
     				<a href="chapterOne.html">Chapter 1</a>
     				<a href="chapterTwo.html">Chapter 2</a>
     				<a href="chapterThree.html">Chapter 3</a>
@@ -43,6 +47,14 @@ This night was the night of prom, and all the school was attending.  He gathers 
 				document.getElementById("chapters").style.display = "block";
 			}
 
+			function next() {
+				location.href = "chapterNine.html";
+			}
+
+			function prev() {
+				location.href = "chapterSeven.html";
+			}
+
 			window.onclick = function(event) {
   				if (!event.target.matches('#chaptersbtn')) {
 
@@ -56,6 +68,7 @@ This night was the night of prom, and all the school was attending.  He gathers 
     				}
   				}
 			}
+
 		</script>
 	</body>
 </html>

@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<title>El Pollo Blanco</title>
-		<link rel="shortcut icon" href="favicon.png">
-		<link rel="stylesheet" href="index.css">
+		<link rel="shortcut icon" href="../favicon.png">
+		<link rel="stylesheet" href="../index.css">
 	</head>
 	<body>
 		<div id="header">
@@ -16,10 +16,16 @@ A sound. It had awakened him. A feeling. It made him shiver. A smell. It frighte
 In a cold, dark warehouse laid a wary white chicken. He had a soul whiter than white people, and a mind dirtier than dirt. Before he was just a kid, with no super ordinary speciality, just his whiteness, there for others to make fun of him of. Now, he had powers only people could dream of, and he was now also stuck in a warehouse, kidnapped by people of the unknown.
 He was in a chair, strung up and blindfolded. He felt a sliver of warmth that landed upon his soft skin. He deduced it was morning, and the sun was rising. Why was he stuck in this place? Was it because he just witnessed a murder. There was a sound of a door opening, then footsteps, coming nearer and nearer. Some sense gave the location of this person. Did he have echolocation too, he would have to add that to his list. He knew the man was close by, about 3 feet away. More footsteps from the door. There were 8 men now, all surrounding him. “I can see that you are awake now.” said the man directly in front of him. He had a thick Russian accent. Then he thought, ooohhh no. He wasn't going down the road of a movie action scene. He was highly educated on this topic and knew that this was how they all started. He wasn’t ready for that. So, he stood up, with the chair, and jumped as hard as he could against the ground. He felt the sensation again. Rising in the air as fast as a bullet, he smashed through the wood ceiling and landed outside on the soft ground. He heard some shouts of Russian inside the warehouse. The chair was smashed off on impact with the ceiling, so his hands and legs were free. He then took off his blindfold. Where was he? He didn’t recognize this place at all, there was an endless view of sea in front of him. The sun was rising, the temperature was climbing fast. Men burst from the doors armed with guns. What could he do, he didn’t have any weapons of that sort, not unless… He took off his shirt to reveal his flabby dead skin. In an instant a group of men screamed in pain and clutched their eyes. This was his weapon, his white skin. It wasn’t a deterrent from god, but a gift. He had hampered the group of Russian men, but more kept coming out. Was this their headquarters? He took the chance to run for it. His skinny Asian legs didn’t do him so well, but he made it out, through the edge of the forest. Now, he was shrouded in trees, they couldn’t find him now. He stopped to catch his breath. His chest rising and falling rapidly. Then he saw what was on the cloth that was used to tie him up. It was a number. 169307. He didn’t know if it meant anything, so he reached for his shirt pocket, but then remembered that he had thrown his shirt on the ground when escaping the Russians. He took a piece of paper out of his pocket and scrawled on it the number that was on the cloth, also jotting down the potential hint from the dead man. He just then realized how exhausted and famished he was. He sat down to rest a while. He took his phone out, touching it for the first time in days. He thought of all the things that happened between then and now. He opened his phone, and amazingly enough he had service. He was going to check Google maps to see where he was, but when he opened it, only one thing popped up. 169307.
 ​			</p>
-			<center><div class="chapterSel">
+
+			<center>
+
+  				<button onclick="prev()" id="prevbtn">Previous</button>
+  				<button onclick="next()" id="nextbtn">Next</button>
+  				<br>
+				<div class="chapterSel">
   				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
  				<div id="chapters" class="chapters-content">
- 					<a href="index.html">Prologue</a>
+ 					<a href="../index.html">Prologue</a>
     				<a href="chapterOne.html">Chapter 1</a>
     				<a href="chapterTwo.html">Chapter 2</a>
     				<a href="chapterThree.html">Chapter 3</a>
@@ -43,6 +49,14 @@ He was in a chair, strung up and blindfolded. He felt a sliver of warmth that la
 				document.getElementById("chapters").style.display = "block";
 			}
 
+			function next() {
+				location.href = "chapterNine.html";
+			}
+
+			function prev() {
+				location.href = "chapterSeven.html";
+			}
+
 			window.onclick = function(event) {
   				if (!event.target.matches('#chaptersbtn')) {
 
@@ -56,6 +70,7 @@ He was in a chair, strung up and blindfolded. He felt a sliver of warmth that la
     				}
   				}
 			}
+
 		</script>
 	</body>
 </html>

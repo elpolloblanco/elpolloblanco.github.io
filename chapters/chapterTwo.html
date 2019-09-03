@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<title>El Pollo Blanco</title>
-		<link rel="shortcut icon" href="favicon.png">
-		<link rel="stylesheet" href="index.css">
+		<link rel="shortcut icon" href="../favicon.png">
+		<link rel="stylesheet" href="../index.css">
 	</head>
 	<body>
 		<div id="header">
@@ -15,10 +15,14 @@
 As he calls others gay, he looks into the mirror.  Questioning himself. How did I get into this deep black abyss of hopelessness? Why am I stuck here? With fake friends. With a fake personality. With a... a... a fake life. He looks at himself in the mirror again, trying to seek a happiness inside himself. But, all that stares back, is a white empty soulless figure setting his gaze on him with disdain.
 He looks for comfort within his phone. His pokemon go. He tells himself that at least he has one goal left in this life... To catch them all.
 			</p>
-			<center><div class="chapterSel">
+			<center>
+  				<button onclick="prev()" id="prevbtn">Previous</button>
+  				<button onclick="next()" id="nextbtn">Next</button>
+  				<br>
+				<div class="chapterSel">
   				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
  				<div id="chapters" class="chapters-content">
- 					<a href="index.html">Prologue</a>
+ 					<a href="../index.html">Prologue</a>
     				<a href="chapterOne.html">Chapter 1</a>
     				<a href="chapterTwo.html">Chapter 2</a>
     				<a href="chapterThree.html">Chapter 3</a>
@@ -30,6 +34,7 @@ He looks for comfort within his phone. His pokemon go. He tells himself that at 
     				<a href="chapterNine.html">Chapter 9</a>
   				</div>
   			</div></center>
+			<br><br>
 		</div>
 		<div class="big-space">
 		</div>
@@ -39,6 +44,14 @@ He looks for comfort within his phone. His pokemon go. He tells himself that at 
 		<script>
 			function chaptersShow() {
 				document.getElementById("chapters").style.display = "block";
+			}
+
+			function next() {
+				location.href = "chapterNine.html";
+			}
+
+			function prev() {
+				location.href = "chapterSeven.html";
 			}
 
 			window.onclick = function(event) {
@@ -54,6 +67,7 @@ He looks for comfort within his phone. His pokemon go. He tells himself that at 
     				}
   				}
 			}
+
 		</script>
 	</body>
 </html>

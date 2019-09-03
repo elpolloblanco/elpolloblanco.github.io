@@ -6,15 +6,22 @@ html, #header {
 	height: 200px;
 	width: 100%;
 }
-#chaptersbtn {
+button {
 	background-color: #e8ce09;
 	color: white;
 	padding: 16px;
 	font-size: 16px;
 	border: none;
 	cursor: pointer;
+	outline: none;
 }
-#chaptersbtn:hover, #chaptersbtn:focus {
+#prevbtn {
+	width: 100px;
+}
+#nextbtn {
+	width: 100px;
+}
+button:hover, button:focus {
 	background-color: #c4ae07;
 }
 .chapterSel {

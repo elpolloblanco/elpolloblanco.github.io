@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<title>El Pollo Blanco</title>
-		<link rel="shortcut icon" href="favicon.png">
-		<link rel="stylesheet" href="index.css">
+		<link rel="shortcut icon" href="../favicon.png">
+		<link rel="stylesheet" href="../index.css">
 	</head>
 	<body>
 		<div id="header">
@@ -10,19 +10,20 @@
 			<center><p id="header-by">By Tony Xin and Tai Nguyen</p><center>
 		</div>
 		<div id="main-area">
-			<center><h2 class="chapter-text">Chapter Three</h2></center>
+			<center><h2 class="chapter-text">Chapter One</h2></center>
 			<p class="story-text">
-As the days go on this poor child named white chicken loses all meaning for life
-What am I here for when you can go catch real Pokémon in hell all those ghastlys down there.
-And so the white chicken our hero of the story slowly treads towards the slaughterhouse
-But something holds him back... something someone told him... who is this someone? His curiosity returns...
-Memories flood his mind but his suicidal goal still pounds in the back of his head.
-Will El Pollo Blanco reach for new hope or give in to the throbbing pain in his life?
-			</p>
-			<center><div class="chapterSel">
+A white chick...
+A young white chick entering the world full of curiosity only to grow up and feed the slaughterhouse.
+His inquiring looks shows so much interest for the world but now he has a heart of ice swearing his soul out and spending his days drowning is melancholy classical music. 
+			</p> 
+			<center>
+  				<button onclick="prev()" id="prevbtn">Previous</button>
+  				<button onclick="next()" id="nextbtn">Next</button>
+  				<br>
+				<div class="chapterSel">
   				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
  				<div id="chapters" class="chapters-content">
- 					<a href="index.html">Prologue</a>
+ 					<a href="../index.html">Prologue</a>
     				<a href="chapterOne.html">Chapter 1</a>
     				<a href="chapterTwo.html">Chapter 2</a>
     				<a href="chapterThree.html">Chapter 3</a>
@@ -46,6 +47,14 @@ Will El Pollo Blanco reach for new hope or give in to the throbbing pain in his 
 				document.getElementById("chapters").style.display = "block";
 			}
 
+			function next() {
+				location.href = "chapterNine.html";
+			}
+
+			function prev() {
+				location.href = "chapterSeven.html";
+			}
+
 			window.onclick = function(event) {
   				if (!event.target.matches('#chaptersbtn')) {
 
@@ -59,6 +68,7 @@ Will El Pollo Blanco reach for new hope or give in to the throbbing pain in his 
     				}
   				}
 			}
+
 		</script>
 	</body>
 </html>

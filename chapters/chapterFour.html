@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>El Pollo Blanco</title>
+		<link rel="shortcut icon" href="../favicon.png">
+		<link rel="stylesheet" href="../index.css">
+	</head>
+	<body>
+		<div id="header">
+			<center><h1 id="header-text">El Pollo Blanco</h1></center>
+			<center><p id="header-by">By Tony Xin and Tai Nguyen</p><center>
+		</div>
+		<div id="main-area">
+			<center><h2 class="chapter-text">Chapter Four</h2></center>
+			<p class="story-text">
+What is this thing you ask. What is this thing that's keeping him from the gates of hell. His friends? His instagram? His fear of the fiery depths that will singe his tender white chicken skin? No. It has to be something greater. Something that is sustaining this feeble life of his and pulling him from his absolute goal. His goal to get out of this vile world. Something that gives some meaning to his life....... Today was an eclipse. A special day. A day worth living. He might as well spend one worthwhile day on this Earth before going... A feather is blown by the gentle breeze onto his lap. He looks down at it... "THE PAIN!!! MY EYES!!! WHAT THE F*#&!!! IT HURTS!!!" The light of the eclipse burns his eyes as it reflects off his pale white skin. He couldn't see for a while, then his vision came back. Is this what pain was like? How could the light get into my eyes even though I'm Asian and my eyes are slits? Then he spots something out of the corner of his eye. Something gorgeous. Something beautiful. Something more intriguing than pokemon go. What can this be?
+			</p>
+			<center>
+  				<button onclick="prev()" id="prevbtn">Previous</button>
+  				<button onclick="next()" id="nextbtn">Next</button>
+  				<br>
+				<div class="chapterSel">
+  				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
+ 				<div id="chapters" class="chapters-content">
+ 					<a href="../index.html">Prologue</a>
+    				<a href="chapterOne.html">Chapter 1</a>
+    				<a href="chapterTwo.html">Chapter 2</a>
+    				<a href="chapterThree.html">Chapter 3</a>
+    				<a href="chapterFour.html">Chapter 4</a>
+    				<a href="chapterFive.html">Chapter 5</a>
+    				<a href="chapterSix.html">Chapter 6</a>
+    				<a href="chapterSeven.html">Chapter 7</a>
+    				<a href="chapterEight.html">Chapter 8</a>
+    				<a href="chapterNine.html">Chapter 9</a>
+  				</div>
+  			</div></center>
+			<br><br>
+		</div>
+		<div class="big-space">
+		</div>
+		<p id="end-text">If you have any suggestions, send them to <a href="yytonyxin@gmail.com">yytonyxin@gmail.com</a></p>
+		<div class="small-space">
+		</div>
+		<script>
+			function chaptersShow() {
+				document.getElementById("chapters").style.display = "block";
+			}
+
+			function next() {
+				location.href = "chapterNine.html";
+			}
+
+			function prev() {
+				location.href = "chapterSeven.html";
+			}
+
+			window.onclick = function(event) {
+  				if (!event.target.matches('#chaptersbtn')) {
+
+   					var chapters = document.getElementsByClassName("chapters-content");
+    				var i;
+    				for (i = 0; i < chapters.length; i++) {
+      					var openChapter = chapters[i];
+      					if (openChapter.style.display === "block") {
+        					openChapter.style.display = "none";
+      					}
+    				}
+  				}
+			}
+
+		</script>
+	</body>
+</html>
