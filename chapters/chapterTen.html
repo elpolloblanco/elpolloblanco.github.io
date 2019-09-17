@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>El Pollo Blanco</title>
+		<link rel="shortcut icon" href="../favicon.png">
+		<link rel="stylesheet" href="../index.css">
+	</head>
+	<body>
+		<div id="header">
+			<center><h1 id="header-text">El Pollo Blanco</h1></center>
+			<center><p id="header-by">By Tony Xin and Tai Nguyen</p><center>
+		</div>
+		<div id="main-area">
+			<center><h2 class="chapter-text">Chapter Nine</h2></center>
+			<p class="story-text">
+&emsp;Something was buzzing. Where was it? What was this sound? What was happening? The source: his right pocket. The sound of his phone alarm woke him up. A sound that he was accustomed to and a sign of his normal life. However, that normal life was long gone. The phone that he was so attached to and that filled his life with entertainment and joy became the reminder of the stark turn in life that these powers have brought him.<br>
+&emsp;After the few seconds of confusion from waking up, he oriented himself with his surroundings. He was on the roof of his house and it was 7:30 in the morning. The events from the day before came flooding back to him like a bullet lodging itself in his skull. The pain, astonishment, and perturbation that he experienced all rushed back to him in the form of memories of yesterday. He paused all thought and contemplated his predicament. At night, he would become a chicken and obtain special powers. This seemed all too unreal. Just about a day ago, he was a boy that dreamt of special powers, only fulfilling those dreams with fictional stories from anime. Now, he is the one who was special. He is the fish out of the sea. In the most of the stories that he has read and watched, the main character is supposed to hide his or her powers from the world. He thought this was the best course of action. But he hesitated. He thought about his life. What was there to go back to? The life of one day ago was empty and worth nothing. He would decide later. Now, he had to make it to school.<br>
+He entered his house and he felt so estranged even though it was his own home. He took his school backpack without his parents noticing and left a note on the kitchen table explaining that he was out with his friends late at night and was sorry he didn't contact them. He thought this would stop further questioning about his whereabouts from his parents. His bike was still in the same spot that he left it, so he took it and headed to school. He was entering into his daily routine, but as an entirely different person. Once he arrived at school, he recognized a distinct face that brought him an instinctual feeling of rage. The face belonged to the person that was with Geal in the car during that night. He couldn't contain his rage, his face visibly turning red. All of a sudden that person started screaming in pain. "MY EYES! WHAT THE F*CK IS HAPPENING!". The white chick initially thought it was just to make fun of his ivory skin, but then realized that he was in actual pain. His eyes started to bleed and the screams were ear-piercing. He then realized that an extremely bright light was directed in his direction. The source: his skin. He realized that he was the cause of all of this guy's pain. A part of him was satisfied, but the other was terrified by the uncontrollable power that he had just discovered. The powers that had shown themselves last night could also be used in the day, but they only activated based on his emotions and mental state. He did not want to seem too conspicuous, so he walked on without appearing like he had anything to do with that man. <br>
+&emsp;The first class that the white chick had was computer science. To him, there was little to no incentive to do computer science. He was just taking it for the credit and put as little effort as he could to pass. This was how most of his classes went: just listlessly following the teacher's directions. This was the main reason that he had an extreme dislike for school. Every second that he was there, he felt he lost a bit of his life. That was why he went to his phone. He wanted to escape the boring world that he had been left in. Now that he had his powers, he could entertain himself. It was something new and interesting that was injected into the his daily, monotone life. A splash of color on a black and white canvas. He could experiment and test. Narrowing down what his powers were and how to use them to their best ability. <br>
+&emsp;The bell that signified the end of school rang and the white chick biked home. He had to wear sunglasses to prevent the reflection from his skin from damaging his eyes. He spent the next few hours doing his teachers' bidding and completing his homework. He then realized that he had no energy and went to bed. By the time he woke up, it was already 2am in the morning. This was the perfect opportunity to test his skills. He felt his skin and it was feathery. He knew that he had transformed. Jumping out his window, he tested his long range jump. He soared into the air, the cold air sending a chill up his spine. Once he was in the air, he could see everything. It was a beautiful sight. Almost as beautiful as… All of a sudden, there was a scream. A scream filled with terror. A scream calling for help. A scream inviting him to come.<br>
+
+			</p>
+			<center>
+  				<button onclick="prev()" id="prevbtn">Previous</button>
+  				<button onclick="next()" id="nextbtn">Next</button>
+  				<br>
+				<div class="chapterSel">
+  				<button onclick="chaptersShow()" id="chaptersbtn">Chapters</button>
+ 				<div id="chapters" class="chapters-content">
+ 					<a href="../index.html">Prologue</a>
+    				<a href="chapterOne.html">Chapter 1</a>
+    				<a href="chapterTwo.html">Chapter 2</a>
+    				<a href="chapterThree.html">Chapter 3</a>
+    				<a href="chapterFour.html">Chapter 4</a>
+    				<a href="chapterFive.html">Chapter 5</a>
+    				<a href="chapterSix.html">Chapter 6</a>
+    				<a href="chapterSeven.html">Chapter 7</a>
+    				<a href="chapterEight.html">Chapter 8</a>
+    				<a href="chapterNine.html">Chapter 9</a>
+    				<a href="chapterTen.html">Chapter 10</a>
+  				</div>
+  			</div></center>
+			<br><br>
+		</div>
+		<div class="big-space">
+		</div>
+		<p id="end-text">If you have any suggestions, send them to <a href="yytonyxin@gmail.com">yytonyxin@gmail.com</a></p>
+		<div class="small-space">
+		</div>
+		<script>
+			function chaptersShow() {
+				document.getElementById("chapters").style.display = "block";
+			}
+
+			function next() {
+				location.href = "chapterTen.html";
+			}
+
+			function prev() {
+				location.href = "chapterNine.html";
+			}
+
+			window.onclick = function(event) {
+  				if (!event.target.matches('#chaptersbtn')) {
+
+   					var chapters = document.getElementsByClassName("chapters-content");
+    				var i;
+    				for (i = 0; i < chapters.length; i++) {
+      					var openChapter = chapters[i];
+      					if (openChapter.style.display === "block") {
+        					openChapter.style.display = "none";
+      					}
+    				}
+  				}
+			}
+
+		</script>
+	</body>
+</html>
